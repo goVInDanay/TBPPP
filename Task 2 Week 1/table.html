@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="title"> Timetable 3C </h1>
+    <table class="TT">
+        <tr>
+            <th>Hours</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>8-9 AM</td>
+            <td onclick="TeacherName('COMPETITIVE PROGRAMMING')">Competitive Programming</td>
+            <td onclick="TeacherName('FULL STACK')">Logical Reasoning</td>
+            <td onclick="TeacherName('COMPETITIVE PROGRAMMING')">Competitive Programming</td>
+            <td onclick="TeacherName('FULL STACK')">Data Structures and Algorithm Lab</td>
+            <td onclick="TeacherName('QUANT AND APTITUDE')">Quant Reasoning and Aptitude</td>
+        </tr>
+        <tr>
+            <td>9-10 AM</td>
+            <td onclick="TeacherName('FULL STACK')">Full Stack Development Lab</td>
+            <td onclick="TeacherName('DATA STRUCTURES AND ALGORITHM')">Data Structures and Algorithm Lab</td>
+            <td onclick="TeacherName('MACHINE LEARNING')">Machine Learning</td>
+            <td onclick="TeacherName('DATA STRUCTURES AND ALGORITHM')">Data Structures and Algorithm Lab</td>
+            <td onclick="TeacherName('THEORY OF AUTOMATA')">Theory of Automata</td>
+        </tr>
+        <tr>
+            <td>10-11 PM</td>
+            <td onclick="TeacherName('FULL STACK')">Full Stack Development Lab</td>
+            <td onclick="TeacherName('DATA STRUCTURES AND ALGORITHM')">Data Structures and Algorithm Lab</td>
+            <td onclick="TeacherName('DATA STRUCTURES AND ALGORITHM')">Data Structures and Algorithm</td>
+            <td onclick="TeacherName('THEORY OF AUTOMATA')">Theory of Automata</td>
+            <td onclick="TeacherName('MACHINE LEARNING LAB')">Machine Learning Lab</td>
+        </tr>
+        <tr>
+            <td>11-12 AM</td>
+            <td colspan="5" class="lunch">Lunch</td>
+        </tr>
+        <tr>
+            <td>12-1 PM</td>
+            <td onclick="TeacherName('DATA STRUCTURES AND ALGORITHM')">Data Structures and Algorithm Lab</td>
+            <td onclick="TeacherName('GROUP DISCUSSION')">Group Discussion and Personal Interview</td>
+            <td onclick="TeacherName('AGILE SOFTWARE DEVELOPMENT')">Agile Software Development</td>
+            <td onclick="TeacherName('MACHINE LEARNING')">Machine Learning</td>
+            <td onclick="TeacherName('MACHINE LEARNING LAB')">Machine Learning Lab</td>
+        </tr>
+    </table>
+</div>
+
+<div id="teacher" class="mode">
+    <div class="content">
+        <span class="close" onclick="closeMode()">&times;</span>
+        <p id="details"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
